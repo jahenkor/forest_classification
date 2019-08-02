@@ -1,0 +1,15 @@
+DecisionTreeClassifier
+    Gini Index to select best split
+    Set max_features to X amount, for computational efficiency
+    max leaf nodes?
+
+    Attempt 1: Didn't set max_features, max_leaf nodes, etc. F1 score = 0.43
+    Attempt 2: max_features = 'log2' F1 score = 0.57
+    Gini impurity since computing logarithmic functions is computationally intensive, Gini also minimzes missclassification. Entropy is for attributest that occur in classes, Gini is intended for cont. attributes.
+	F1 score = 0.69
+    Attempt 3: Max_depth used as a "control variable for pre-pruning" (optimization)
+    Attempt 4: Recorded max depth values from 1-1000, it seems that a max_depth at 100, would be optimal for performance, and in terms of the f1 score. 
+    
+
+    Attempt 3: Max_leaf_nodes set to 145, min_impurity_decrease set to 0.4
+Bayes Classifier
